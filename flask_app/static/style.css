@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: lightblue;
+    color: white;
+}
+.navbar-brand{
+    color: rgb(49, 104, 207);
+}
+#pageContain{
+    margin-top: 50px;
+}
+
+h3{
+    color: #3168cf;
+    background-color: lightblue;
+    border-top: 3px solid lightblue;
+    margin: 0px;
+}
+
+#pagecon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#box{
+    width:300px;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.input{
+margin-bottom: 15px;
+    display: flex;
+}
+
+
+#RLpagecon{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+    color:  #3168cf;
+}
+#reg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 200px;
+    padding-top: 15px;
+}
+
+.inputRL{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    display: flex;
+    color: #3168cf;
+}
+
+#log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:190px;
+    width: 200px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.label{
+    color: #3168cf;
+}

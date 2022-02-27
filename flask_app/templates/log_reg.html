@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'style.css') }}">
+</head>
+
+<body id="b1">
+    <h1>Login and Registration</h1>
+    <div id="RLpagecon">
+
+        <div id="reg">
+            
+            <form action="/register" method="post">
+                {% with messages = get_flashed_messages() %}
+                <!-- declare a variable called messages -->
+                {% if messages %}
+                <!-- check if there are any messages -->
+                {% for message in messages %}
+                <!-- loop through the messages -->
+                <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+                
+                <label for="first_name" class="label"> First Name: </label>
+                <input type="text" name="first_name" class="inputRL">
+                
+                <label for="last_name" class="label"> Last Name: </label>
+                <input type="text" name="last_name" class="inputRL">
+                
+                <label for="email" class="label"> Email Address: </label>
+                <input type="text" name="email" class="inputRL">
+                
+                <label for="password" class="label"> Password: </label>
+                <input type="password" name="password" class="inputRL">
+                
+                <label for="confirm_password" class="label"> Confirm Password: </label>
+                <input type="password" name="confirm_password" class="inputRL">
+                
+                <input type="submit" value="Register" class="inputRL">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- -------------------------------------------------------------- -->
+        <div id="log">
+            <form action="/login" method="post">
+                
+                <label for="email" class="label">Email Address: </label>
+                <input type="text" name="email" class="inputRL">
+                
+                <label for="password" class="label" >Password: </label>
+                <input type="password" name="password" class="inputRL">
+                
+                <input type="submit" value="Login" class="inputRL">
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
